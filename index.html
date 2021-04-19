@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Checkout example · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="row g-5">
+      
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Registration Details</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+
+            <!--Salutation-->
+            <div class="col-md-5">
+              <label for="salutation" class="form-label">Salutation*</label>
+              <select class="form-select" id="salutation" required>
+                <option value="">Choose...</option>
+                <option>Mr.</option>
+                <option>Ms.</option>
+                <option>Dr.</option>
+                <option>Prof.</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid salutation.
+              </div>
+
+              <br>
+
+
+
+              <!--First name-->
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">First name*</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+
+              <br>
+
+              <!--Middle name (optional)-->
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Middle name</label>
+                <input type="text" class="form-control" id="middleName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid middle name is required.
+                </div>
+              </div>
+
+              <br>
+
+
+              <!--Last name-->
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last name*</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+
+              <br>
+
+
+              <!--Gender-->
+              <div class="col-md-5">
+                <label for="gender" class="form-label">Gender*</label>
+                <select class="form-select" id="gender" required>
+                  <option value="">Choose...</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid salutation.
+                </div>
+
+                <br>
+
+
+              <!--Email Id-->
+              <div class="col-12">
+                <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Please enter a valid email address 
+                </div>
+              </div>
+
+              <br>
+  
+              <div class="col-12">
+                <label for="email" class="form-label">Email (secondary) <span class="text-muted">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Please enter a valid email address 
+                </div>
+              </div>
+
+              <br>
+  
+
+
+              <!--Phone number-->
+              <div class="col-md-3">
+              <label for="phone" class="form-label">Phone Number*</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Phone number required.
+              </div>
+            </div>
+
+            <br>         
+
+
+              <!--Affiliation-->
+              <div class="col-sm-6">
+                <label for="affiliation" class="form-label">Affiliation*</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>                
+              </div>
+
+              <br>
+
+
+              <!--Correspondence address-->
+              <div class="col-12">
+                <label for="address" class="form-label">Correspondence Address*</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                <div class="invalid-feedback">
+                  Please enter correspondence address.
+                </div>
+              </div>
+
+              <br>
+  
+                
+              <div class="col-md-5">
+                <label for="country" class="form-label">Country*</label>
+                <select class="form-select" id="country" required>
+                  <option value="">Choose...</option>
+                  <option>United States</option>
+                  <option>India</option>
+                  <option>United Kingdom</option>
+                  <option>Europe</option>
+                  <option>Australia</option>
+                  <option>Russia</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+
+              <br>
+  
+              <div class="col-md-4">
+                <label for="state" class="form-label">State*</label>
+                <select class="form-select" id="state" required>
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                  <option>West Bengal</option>
+                  <option>Buckingham</option>
+                  <option>Melbourne</option>
+                  <option>Ukraine</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+
+              <br>
+  
+              <div class="col-md-3">
+                <label for="zip" class="form-label">Zip code*</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+            </div>
+
+            <br>
+            
+              <!--Will you attend the one day course(radio button)-->
+
+              <div class="col-md-5">
+                <label for="One day course" class="form-label">Will you attend the one day course?*</label>
+                <select class="form-select" id="One day course" required>
+                  <option value="">Choose...</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                  
+                </select>
+                <div class="invalid-feedback">
+                  Please select Yes/No
+                </div>
+              </div>  
+              
+              <br>
+
+
+
+              <!--Do you need accomodation (radio button)-->
+
+              <div class="col-md-5">
+                <label for="accomodation" class="form-label">Do you need accomodation?*</label>
+                <select class="form-select" id="accomodation" required>
+                  <option value="">Choose...</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                  
+                </select>
+                <div class="invalid-feedback">
+                  Please select Yes/No
+                </div>
+              </div>
+
+              <br>
+
+
+
+              <!--Dietary prefernce (radio button)-->
+
+              <div class="col-md-5">
+                <label for="diet" class="form-label">Dietary preference*</label>
+                <select class="form-select" id="diet" required>
+                  <option value="">Choose...</option>
+                  <option>Veg</option>
+                  <option>Non veg</option>
+                  
+                </select>
+                <div class="invalid-feedback">
+                  Please select an option
+                </div>
+              </div>
+
+              <br>
+
+              
+
+
+              <!--Category of registration (radio button)-->
+
+              <div class="col-md-5">
+                <label for="registration category" class="form-label">Category of registration*</label>
+                <select class="form-select" id="registration category" required>
+                  <option value="">Choose...</option>
+                  <option>General</option>
+                  <option>ICC member</option>
+                  <option>Student</option>
+                  
+                </select>
+                <div class="invalid-feedback">
+                  Please select an option
+                </div>
+              </div>
+
+              <br>
+
+
+              <!--Fees (Instruction)-->
+              <div class="col-md-5">
+                <label for="Fees" class="form-label">Fees: Refer to website nscs28.com for more details</label>                                
+              </div>
+
+              <br>
+
+
+              <!--Mode of payment (drop down)-->
+
+              <div class="col-md-5">
+                <label for="payment" class="form-label">Mode of payment*</label>
+                <select class="form-select" id="payment" required>
+                  <option value="">Choose...</option>
+                  <option>NEFT</option>
+                  <option>RTGS</option>
+                  <option>IMPS</option>
+                  <option>Demand Draft</option>
+                  
+                </select>
+                <div class="invalid-feedback">
+                  Please select an option
+                </div>
+              </div>
+
+              <br>
+
+
+
+
+              <!--Transaction Id (textbox)-->
+
+              <div class="col-sm-6">
+                <label for="transaction Id" class="form-label">Transaction Id*</label>
+                <input type="text" class="form-control" id="transaction Id" placeholder="" value="" required>                
+              </div>
+
+              <br>
+
+              <br>
+
+
+
+              <!--Register button-->
+
+              <button class="w-100 btn btn-primary btn-lg" type="submit">Register </button>
+
+
+              <!--Post Submission-->              
+          </div>
+        </div>        
+      </div>          
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="form-validation.js"></script>
+  </body>
+</html>
