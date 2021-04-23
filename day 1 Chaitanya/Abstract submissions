@@ -1,0 +1,123 @@
+<html>
+<head>
+    <link rel="icon" href="download.png">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+ 
+</head>   
+
+<body style="background-color: white;">
+    <br>
+    
+    <h1 style="text-align: center; color:black;" >
+        Abstract Submission
+    </h1>
+
+    <div class="container" style="padding-left: 2%; padding-right:10% ; " >
+
+    <form>
+        <div >
+            <label for="title" > Title of the Paper</label>
+            <br>
+            <input type="text"  placeholder="Enter title" id="title" required>
+          </div>
+          <br>
+
+          <div >
+            <label for="Abstract"> Abstract </label>
+            <br>
+            <textarea name="Abstract" id="ab" cols="30" rows="10" required></textarea>
+          </div>
+          <br>
+          
+          <div >
+            <label for="name1"> Author 1 name  </label>
+            <br>
+            <input type="text" placeholder="Enter 1st author name" id="name1">
+          </div>
+          <br>
+          
+          <div >
+            <label for="aff1"> Author 1 Affiliation  </label>
+            <br>
+            <input type="text" placeholder="Enter 1st author's Affiliation " id="aff1">
+          </div>
+          <br>
+          
+          <div >
+            <label for="name2"> Author 2 name  </label>
+            <br>
+            <input type="text" placeholder="Enter 2nd author name" id="name2">
+          </div>
+          <br>
+          
+          <div >
+            <label for="aff2"> Author 2 Affiliation  </label>
+            <br>
+            <input type="text" placeholder="Enter 2nd author's Affiliation " id="aff2">
+          </div>
+          <br>
+          
+          <div >
+            <label for="name3"> Author 3 name  </label>
+            <br>
+            <input type="text" placeholder="Enter 3rd author name" id="name3">
+          </div>
+          <br>
+          
+          <div >
+            <label for="aff3"> Author 3 Affiliation  </label>
+            <br>
+            <input type="text" placeholder="Enter 3rd author's Affiliation " id="aff3">
+          </div>
+          <br>
+          
+          <div >
+            <label for="name4"> Author 4 name  </label>
+            <br>
+            <input type="text" placeholder="Enter 4th author name" id="name4">
+          </div>
+          <br>
+          
+          <div >
+            <label for="aff4"> Author 4 Affiliation  </label>
+            <br>
+            <input type="text" placeholder="Enter 4th author's Affiliation " id="aff4">
+          </div>
+          <br>
+          
+          <div>
+            <label for="email"> Correspondence Email</label>
+            <br>
+            <input type="email" placeholder="xyz@example.com " name="Enter the email address" id="email">
+          </div>
+          <br>
+
+          <div>
+            <label for="keywords">keywords</label>
+            <br>
+            <input type="text" placeholder="Enter the keywords for the Paper " id="keywords">
+
+            <br>
+            <br>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                agree to terms and conditions
+              </label>
+
+
+          </div>
+          <br>
+         <button type="submit"> Submit </button>
+
+      </form>
+      
+  
+    </div>
+  
+
+</body>
+
+</html>
