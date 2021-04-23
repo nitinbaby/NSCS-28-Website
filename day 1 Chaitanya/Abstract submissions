@@ -19,14 +19,14 @@
         <div >
             <label for="title" > Title of the Paper</label>
             <br>
-            <input type="text"  placeholder="Enter title" id="title">
+            <input type="text"  placeholder="Enter title" id="title" required>
           </div>
           <br>
 
           <div >
             <label for="Abstract"> Abstract </label>
             <br>
-            <textarea name="Abstract" id="ab" cols="30" rows="10"></textarea>
+            <textarea name="Abstract" id="ab" cols="30" rows="10" required></textarea>
           </div>
           <br>
           
